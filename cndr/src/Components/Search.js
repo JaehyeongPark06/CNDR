@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 function Search(props) {
     /* let weather = {
@@ -62,9 +62,9 @@ function Search(props) {
 
     return (
         <div>
-            <input type="text" class="search-bar" placeholder="Search"
+            <input type="text" class="search-bar" placeholder="Search for new location..."
                 onChange={textChange} value={props.location}></input> 
-            <button><FontAwesomeIcon icon={faCoffee} onClick={Enter}/></button>
+            <button><FontAwesomeIcon icon={faSearch} onClick={Enter}/></button>
         </div>
     );
 }

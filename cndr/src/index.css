@@ -147,35 +147,31 @@ textarea {
   padding: 0 0 0 10px;
 }
 
-.search-table {
-  margin: 0 auto;
-  table-layout: fixed;
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 1000px;
-  text-align: left;
-}
-
-.search-table th {
-  background-color: firebrick;
-  color: white;
-}
-
-.search-table tr:nth-child(even) {
-  background-color: #cccccc;
-}
-
-.search-table th,
-td {
-  padding: 10px;
-}
-
-.option-container {
+.search-bar {
   display: flex;
+  padding: 8px 5px;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+  outline-width: 0;
+  border: 3px solid transparent;
+  transition: border 0.3s;
+  border-radius: 1rem;
 }
 
-.option-container p {
-  margin-right: 10px;
+.search-bar:hover {
+  border: 3px solid black;
 }
+
+button {
+  padding: 5px 5px;
+  color: #111;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  outline-width: 2px solid black;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
