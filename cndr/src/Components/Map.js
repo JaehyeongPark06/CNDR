@@ -18,7 +18,7 @@ function Map({center, eventData}) {
 
     //Index for reference
     const eventDataIndex = {
-        1: "Wildfires",
+        8: "Wildfires",
     }
 
     //Create an Array of its keys
@@ -59,7 +59,7 @@ function Map({center, eventData}) {
     return (
         <div className="map-container">
             <GoogleMapReact 
-                bootstrapURLKeys={{key: process.env.REACT_APP_GOOGLE_API_KEY}}
+                bootstrapURLKeys={{key: "AIzaSyA_5tuJolnIXx6jAr5dgg6D17OKGYH2NUs"}}
                 center={center}
                 zoom={zoom}
                 yesIWantToUseGoogleMapApiInternals

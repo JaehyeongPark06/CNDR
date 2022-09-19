@@ -12,7 +12,7 @@ import { _api } from '@iconify/react';
 
 function App() {
   const { setEventData, reRenderMarkers } = useMainContext();
-  const [ title, setTitle] = useState({});
+  const [title, setTitle] = useState({});
   const [loading, setLoading] = useState(false);
   //Event to render
   const [renderEvent, setRenderEvent] = useState([]);
@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     const fetchEvents = async () => {
       setLoading(true);
-      const res = await fetch("https://eonet.gsfc.nasa.gov/api/v2.1/categories/8?limit=20");
+      const res = await fetch("https://eonet.gsfc.nasa.gov/api/v2.1/categories/8?limit=500");
       //Extract the Array contained in the 'events' field.
       const { events } = await res.json();
       //Event data is globally accessible. But 'renderEvent' is just to render out the MAP with the markers
@@ -36,7 +36,7 @@ function App() {
       setRenderEvent(events);
       setTitle(events);
       setLoading(false);
-      console.log(events);  
+      console.log(events);
     }
     fetchEvents();
   }, [])
@@ -57,21 +57,45 @@ function App() {
       userLatitude = response.data.coord.lat;
       userLongitude = response.data.coord.lon;
 
+      let temp = title;
+
+      temp.forEach((item) => {
+        const fireLatitude = item.geometries[0].coordinates[1];
+        const fireLongitude = item.geometries[0].coordinates[0];
+        const radius = Math.sqrt(Math.pow((fireLatitude - userLatitude), 2) + Math.pow((fireLongitude - userLongitude), 2));
+        console.log(radius);
+        item.radius = radius;
+        // = radius;
+        /* danger level caluculator
+if user is at high risk
+if user is at medium risk 
+if user is at low risk
+if user is at no risk*/
+        if (radius < 2.2) {
+          console.log("Danger level is high");
+          item.dangerLevel = "High";
+        }
+        else if (1.5 <= radius && radius <= 3) {
+          console.log("Danger level is medium")
+          item.dangerLevel = "Medium";
+        }
+        else if (3 < radius && radius < 5) {
+          console.log("Danger level is low")
+          item.dangerLevel = "Low"
+        } else {
+          console.log("No Danger level");
+          item.dangerLevel = "None"
+        }
+      });
+
+      temp.sort((a,b) =>  (a.radius < b.radius) ? -1: 1);
+
+      setTitle(temp);
+      console.log(title);
+      console.log(temp);
     })
 
-    let temp = title;
 
-    temp.forEach((item)=> {
-      const fireLatitude = item.geometries[0].coordinates[1];
-      const fireLongitude = item.geometries[0].coordinates[0];
-      const radius = Math.sqrt(Math.pow((fireLatitude - userLatitude),2)+Math.pow((fireLongitude - userLongitude),2));
-      item.radius = radius;
-      // = radius;
-    });
-    setTitle(temp);
-    console.log(title);
-
-    
   }
 
   return (
@@ -79,7 +103,7 @@ function App() {
       <Header />
       {!loading ? <Map eventData={renderEvent} /> : <Loader />}
       {!loading && <Search location={location} setLocation={textChange} Enter={Enter} />}
-      <Info />
+      <Info fires={title}/>
     </div>
   );
 }

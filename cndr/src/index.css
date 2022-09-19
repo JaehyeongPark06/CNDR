@@ -47,6 +47,7 @@ body {
 
 .location-icon {
   font-size: 2rem;
+  color: red;
   position: relative;
 }
 
@@ -148,7 +149,7 @@ textarea {
 }
 
 .search-bar {
-  display: flex;
+  display: fixed;
   padding: 8px 5px;
   justify-content: center;
   align-items: center;

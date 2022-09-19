@@ -1,18 +1,18 @@
 import React from 'react';
-import {Icon} from '@iconify/react';
-import fireImage from '@iconify/icons-emojione/fire';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFire } from '@fortawesome/free-solid-svg-icons';
 
-function LocationMarker({lat, lng, onClick, id}) {
-    let renderIcon = null;
-    if(id === 1){
-        renderIcon = fireImage
+function LocationMarker({id}) {
+    let FontAwesomeIcon = null;
+    if(id == 1){
+        FontAwesomeIcon = faFire;
     } else {
         return;
     }
 
     return (
-        <div onClick={onClick}>
-            <Icon icon={renderIcon} className="location-icon" />
+        <div>
+            <FontAwesomeIcon icon={faFire} className="location-icon" />
         </div>
     );
 }
