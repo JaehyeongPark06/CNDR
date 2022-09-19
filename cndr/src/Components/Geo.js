@@ -127,6 +127,5 @@ function sortByDistDM(a, b) {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-// Store Name[0],delivery[1],Address[2],Delivery Zone[3],Coordinates[4] data from FusionTables pizza stores example
 var locations = [
 ]
