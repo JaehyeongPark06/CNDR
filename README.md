@@ -3,7 +3,7 @@
 2022 Hack the North Project: 
 
 A web application that tracks wildfires across the globe and tailors mitigative solutions for land owners in the agricultural and lumber industry. 
-We do this by quantifying risk levels to suggest an appropriate course of action.
+Determines risk levels by using a shortest path algorith and suggests a course of action accordingly.
 
 Group Members:
 
