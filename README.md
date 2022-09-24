@@ -43,6 +43,9 @@ Charlie:
 Github: 
 https://github.com/C-MartinezWaterloo
 
+Linkedin:
+https://www.linkedin.com/in/charlie-martinez-bba099236/
+
 Ernie: 
 Github:
 n/a
