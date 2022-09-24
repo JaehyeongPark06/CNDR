@@ -1,4 +1,4 @@
-#Inspiration
+#Inspiration#
 Wildfires around the world have destroyed billions of square feet of forestry and fertile land, causing irreversible environmental and economic damage. While there exists a plethora of government agencies in Canada and around the world that track and manage wildfires for public property, relevant data and mitigation strategies continue to remain inaccessible to the agricultural and lumber sectors.
 
 We thought to ourselves, there has to be a better way. How can we connect the private and public sectors? How can we make relevant information as openly accessible as possible? And most importantly, how can we make a tangible impact through tech?
