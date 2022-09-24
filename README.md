@@ -49,3 +49,6 @@ https://www.linkedin.com/in/charlie-martinez-bba099236/
 ### Ernie: 
 Github:
 n/a
+
+## Devpost 
+https://devpost.com/software/cindr
