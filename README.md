@@ -35,17 +35,17 @@ Floods. (And calling it SWMP)
 
 ## Group Members:
 
-Swayam:
+### Swayam:
 Github: 
 https://github.com/swayamparekh
 
-Charlie:
+### Charlie:
 Github: 
 https://github.com/C-MartinezWaterloo
 
 Linkedin:
 https://www.linkedin.com/in/charlie-martinez-bba099236/
 
-Ernie: 
+### Ernie: 
 Github:
 n/a
