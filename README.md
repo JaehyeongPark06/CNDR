@@ -39,14 +39,10 @@ Floods. (And calling it SWMP)
 ## Group Members:
 
 ### Swayam:
-Github: 
 [Swayam-Github](https://github.com/swayamparekh)
 
 ### Charlie:
-Github: 
 [Charlie-Github](https://github.com/C-MartinezWaterloo)
-
-Linkedin:
 [Charlie-Linkedin](https://www.linkedin.com/in/charlie-martinez-bba099236/)
 
 ### Ernie: 
