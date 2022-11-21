@@ -1,6 +1,6 @@
 # CNDR - Hack The North 2022 @UWaterloo
 
-# Link to [Devpost](https://devpost.com/software/cindr)
+### Link to [Devpost](https://devpost.com/software/cindr)
 
 ## 💡 Inspiration 💡
 Wildfires around the world have destroyed billions of square feet of forestry and fertile land, causing irreversible environmental and economic damage. While there exists a plethora of government agencies in Canada and around the world that track and manage wildfires for public property, relevant data and mitigation strategies continue to remain inaccessible to the agricultural and lumber sectors.
