@@ -38,6 +38,10 @@ Floods. (And calling it SWMP)
 
 ## Group Members:
 
+### ME:
+[LinkedIn](https://www.linkedin.com/in/jaehyeongpark/)
+[Github](https://www.github.com/jaehyeongpark06/)
+
 ### Swayam:
 [Swayam-Github](https://github.com/swayamparekh)
 
